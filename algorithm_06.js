@@ -37,3 +37,12 @@ function solution(arr) {
 function solution(phone_number) {
   return "*".repeat(phone_number.length - 4) + phone_number.slice(-4);
 }
+
+function solution(phone_number) {
+  // //원본배열을 해치기때문에 합칠때 join을 해줘야함
+  // phone_number.split("").splice(1, 4);
+  // //문자열을 자를땐 슬라이스가 좋다.
+  // phone_number.slice(1, -4);
+  answer = answer.padStart(phone_number.length - 4, "*");
+  answer += answer.slice(phone_number.length - 4);
+}
