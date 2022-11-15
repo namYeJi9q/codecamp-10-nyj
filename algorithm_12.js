@@ -5,7 +5,7 @@ function solution(n) {
     .toString()
     .split("")
     .reverse()
-    .map((x) => (x = parseInt(x)));
+    .map((x) => Number(x));
 }
 
 // 나누어 떨어지는 숫자 배열
